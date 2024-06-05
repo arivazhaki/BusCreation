@@ -1,6 +1,11 @@
 const config = {
-	countStart: 0,
-	increment: 1,
+	windowPosition: [
+		{ marginLeft: '20%' },
+		{ marginLeft: '30%' },
+		{ marginLeft: '40%' },
+		{ marginLeft: '50%' },
+		{ marginLeft: '60%' },
+	],
 };
 
 export default config;

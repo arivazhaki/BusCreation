@@ -1,19 +1,14 @@
 import React from 'react';
-import './App.scss';
+import New from './New';
+import WindowSecond from './WindowSecond';
+import Door from './Door';
 
-const Bus = () =>
-	<div className="bus-container">
-		<div className="bus">
-			<div className="windows">
-				<div className="window"/>
-				<div className="window"/>
-				<div className="window"/>
-				<div className="window"/>
-			</div>
-			<div className="wheels">
-				<div className="wheel"/>
-				<div className="wheel"/>
-			</div>
+const Bus = (context) =>
+	<div>
+		<div className="bus-container">
+			<New { ...context }/>
+			<WindowSecond { ...context }/>
+			<Door { ...context }/>
 		</div>
 	</div>;
 

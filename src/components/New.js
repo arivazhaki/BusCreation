@@ -1,21 +1,29 @@
+/* eslint-disable max-lines-per-function */
 /* eslint-disable no-dupe-keys */
 import { React } from 'react';
 
 const New = () => {
 	const bodyStyle = {
-		width: '93vw',
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'space-between',
+		alignItems: 'center',
+		width: '60vw',
 		height: '25vw',
-		backgroundColor: 'blue',
-		position: 'relative',
+		backgroundColor: 'yellowgreen',
 		border: '5px solid black',
-		borderTopRightRadius: '5%',
-		margin: '25% auto',
-		padding: '0%',
+		borderRadius: '10px',
+		padding: '20px',
+		borderTopRightRadius: '25%',
+		position: 'absolute',
+		left: '18%',
+		boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+		margin: '10% auto',
 	};
 
-	return (
+	return <div>
 		<div style={ bodyStyle }/>
-	);
+	</div>;
 };
 
 export default New;
