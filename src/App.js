@@ -1,11 +1,10 @@
 import { React } from 'react';
 import './App.scss';
-import New from './components/New';
+import Bus from './components/Bus';
 
-const App = () => {
+const App = (context) =>
 	<div className="App">
-		<New/>
+		<Bus { ...context }/>
 	</div>;
-};
 
 export default App;

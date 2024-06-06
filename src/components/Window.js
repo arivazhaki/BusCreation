@@ -8,13 +8,12 @@ const Window = (context) => {
 			<div style={ {
 				width: '8vw',
 				height: '9vw',
-				backgroundColor: '#e0e0e0',
+				backgroundColor: 'lightgrey',
 				border: '10px solid #000',
 				position: 'absolute',
-				overflow: 'hidden',
 				borderRadius: '10px',
 				boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
-				top: '70px',
+				top: '8%',
 				left: marginLeft,
 				margin: '10% auto',
 			} }

@@ -8,17 +8,17 @@ const New = () => {
 		flexDirection: 'column',
 		justifyContent: 'space-between',
 		alignItems: 'center',
-		width: '60vw',
+		width: '65vw',
 		height: '25vw',
 		backgroundColor: 'yellowgreen',
 		border: '5px solid black',
-		borderRadius: '10px',
 		padding: '20px',
-		borderTopRightRadius: '25%',
+		borderTopRightRadius: '20%',
+		borderTopLeftRadius: '10%',
 		position: 'absolute',
+		top: '18%',
 		left: '18%',
 		boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-		margin: '10% auto',
 	};
 
 	return <div>

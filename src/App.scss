@@ -8,67 +8,31 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 100vh;
+	width: 150vw;
+	height: 100vw;
 	position:relative;
   }  
-.bus {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 80%;
-	max-width: 600px;
-	height: 200px;
-	background-color: #FFD700;
-	border-radius: 10px;
-	padding: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	position: absolute;
-  }
- .windows {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-  }
-  
-  .window {
-	width: 20%;
-	height: 60px;
-	background-color: #87CEEB;
-	border-radius: 5px;
-  }
-  
-  .wheels {
-	display: flex;
-	justify-content: space-between;
-	width: 50%;
-  }
-  
-  .wheel {
-	width: 40px;
-	height: 40px;
-	background-color: #000;
-	border-radius: 50%;
-  }
-  
-  @media (max-width: 600px) {
-	.bus {
-	  width: 100%;
-	  height: 150px;
+  .wheel{
+		width: 12vw;
+		height: 12vW;
+		background-color: black;
+		border-radius: 50%;
+		top : 40%;
+		border: grey;
+		position: absolute;
+		animation: anim 2s linear infinite;
+  		}
+	.rim{
+		width:8vw;
+		height:8vw;
+		border-radius:50%;
+		top:50%;
+		position:absolute;
+		transform: translate(-50%,-50%);
+		}
+	@keyframes anim{
+		0%{transform: rotate(0deg)}
+		100%{transform: rotate(360deg)}
+		}
 	}
-  
-	.windows .window {
-	  height: 50px;
-	}
-  
-	.wheels {
-	  width: 60%;
-	}
-  
-	.wheel {
-	  width: 30px;
-	  height: 30px;
-	}
-  }
-}
+	
