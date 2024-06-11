@@ -1,24 +1,24 @@
+/* eslint-disable max-lines-per-function */
 import { React } from 'react';
+import baby from '../assets/baby.jpg';
 
 const Window = (context) => {
 	const { data: { marginLeft }} = context;
 
-	return (
-		<div>
-			<div style={ {
-				width: '8vw',
-				height: '9vw',
-				backgroundColor: 'lightgrey',
-				border: '10px solid #000',
-				position: 'absolute',
-				borderRadius: '10px',
-				boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
-				top: '8%',
-				left: marginLeft,
-				margin: '10% auto',
-			} }
+	return <div>
+		<div
+			className="window"
+			style={ { left: marginLeft } }
+		>
+			<img
+				className="baby"
+				src={ baby }
+				alt="babyimg"
+				width="5vw"
+				height="5vw"
 			/>
-		</div>);
+		</div>
+	</div>;
 };
 
 export default Window;

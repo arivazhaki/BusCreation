@@ -12,7 +12,8 @@ const Bus = (context) =>
 		<WindowSecond { ...context }/>
 		<Door { ...context }/>
 		<Mirror { ...context }/>
-
+		<div className="border"/>
+		<div className="borderBottom"/>
 	</div>;
 
 export default Bus;

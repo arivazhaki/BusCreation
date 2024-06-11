@@ -11,7 +11,26 @@
 	width: 150vw;
 	height: 100vw;
 	position:relative;
-  }  
+  } 
+  .border{
+	width: 57vw;
+	height: 3vw;
+	position:absolute;
+	top: 19%;
+	left:20%;
+	border:5px solid black;
+	border-top-right-radius: 20%;
+	background-color: lightgrey;
+  }
+  .borderBottom{
+	width: 51vw;
+	height: 1vw;
+	position:absolute;
+	top: 34%;
+	left:20%;
+	border:2px solid black;
+	background-color: yellow;
+  }
   .wheel{
 		width: 12vw;
 		height: 12vW;
@@ -34,5 +53,53 @@
 		0%{transform: rotate(0deg)}
 		100%{transform: rotate(360deg)}
 		}
+	.driver{
+		width:3vw;
+		height:11vw;
+		top:1%;
+		left:11%;
+		position:absolute;
+	}
+	.baby{
+		width:8vw;
+		height:9vw;
+		top:50%;
+		position: absolute;
+		transform: translate(-50%,-50%);
+	}
+	.girl
+	{
+		width:8vw;
+		height:9vw;
+		top:23.5%;
+		position:absolute;
+	}
+	.window
+	{
+		width: 8vw;
+		height: 9vw;
+		background-color: lightgrey;
+		border: 10px solid #000;
+		position: absolute;
+		border-radius: 10px;
+		box-shadow: '0 0 10px rgba(0, 0, 0, 0.5)';
+		top: 8%;
+		margin: 10% auto,
+	}
+	.busBackground{
+		width: 150vw;
+		height: 38vw;
+		top: 30%;
+		left:18%;
+		position: absolute;
+	}
+	.background-image-example {
+		width: 100%;
+		height: 400px;
+		background-image: url('path/to/your/image.jpg');
+		background-size: cover; /* makes the image cover the entire div */
+		background-position: center; /* centers the image */
+		background-repeat: no-repeat; /* prevents the image from repeating */
+	}
 	}
 	

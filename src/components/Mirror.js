@@ -1,4 +1,7 @@
+/* eslint-disable max-lines-per-function */
+
 import { React } from 'react';
+import driver from '../assets/driver.jpg';
 
 const Mirror = () => {
 	const style = {
@@ -13,7 +16,15 @@ const Mirror = () => {
 	};
 
 	return (
-		<div style={ style }/>
+		<div style={ style }>
+			<img
+				className="driver"
+				src={ driver }
+				alt="driverimg"
+				width="3vw"
+				height="5vw"
+			/>
+		</div>
 	);
 };
 

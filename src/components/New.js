@@ -18,7 +18,7 @@ const New = () => {
 		position: 'absolute',
 		top: '18%',
 		left: '18%',
-		boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+		boxshadow: '0 4px 8px rgba(0, 0, 0, 0.1',
 	};
 
 	return <div>
