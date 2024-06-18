@@ -9,8 +9,8 @@ const Mirror = () => {
 		height: '11vW',
 		backgroundColor: 'lightgrey',
 		borderRadius: '10px',
-		top: '23%',
-		right: '37%',
+		top: '-10%',
+		right: '50%',
 		border: '8px solid black',
 		position: 'absolute',
 	};

@@ -1,24 +1,24 @@
 /* eslint-disable max-lines-per-function */
 /* eslint-disable no-dupe-keys */
 import { React } from 'react';
+import getRandomColor from '../services/getRandomColor';
 
 const New = () => {
 	const bodyStyle = {
-		display: 'flex',
-		flexDirection: 'column',
 		justifyContent: 'space-between',
 		alignItems: 'center',
-		width: '65vw',
-		height: '25vw',
-		backgroundColor: 'yellowgreen',
+		width: '40%',
+		height: '19%',
+		backgroundColor: `#${ getRandomColor() }`,
 		border: '5px solid black',
 		padding: '20px',
 		borderTopRightRadius: '20%',
 		borderTopLeftRadius: '10%',
 		position: 'absolute',
-		top: '18%',
-		left: '18%',
+		top: '-12.5%',
+		left: '10%',
 		boxshadow: '0 4px 8px rgba(0, 0, 0, 0.1',
+		animation: 'nextBusForward infinite',
 	};
 
 	return <div>

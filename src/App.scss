@@ -13,21 +13,21 @@
 	position:relative;
   } 
   .border{
-	width: 57vw;
-	height: 3vw;
+	width: 43vw;
+	height: 1.5vw;
 	position:absolute;
-	top: 19%;
-	left:20%;
+	top: -12%;
+	left:12%;
 	border:5px solid black;
 	border-top-right-radius: 20%;
 	background-color: lightgrey;
   }
   .borderBottom{
-	width: 51vw;
+	width: 46vw;
 	height: 1vw;
 	position:absolute;
-	top: 34%;
-	left:20%;
+	top: 2%;
+	left:11%;
 	border:2px solid black;
 	background-color: yellow;
   }
@@ -36,7 +36,7 @@
 		height: 12vW;
 		background-color: black;
 		border-radius: 50%;
-		top : 40%;
+		top : 4%;
 		border: grey;
 		position: absolute;
 		animation: anim 2s linear infinite;
@@ -61,8 +61,8 @@
 		position:absolute;
 	}
 	.baby{
-		width:8vw;
-		height:9vw;
+		width:7vw;
+		height:8vw;
 		top:50%;
 		position: absolute;
 		transform: translate(-50%,-50%);
@@ -93,13 +93,53 @@
 		left:18%;
 		position: absolute;
 	}
-	.background-image-example {
+	// .background-image-example {
+	// 	width: 100%;
+	// 	height: 400px;
+	// 	background-image: url('path/to/your/image.jpg');
+	// 	background-size: cover; /* makes the image cover the entire div */
+	// 	background-position: center; /* centers the image */
+	// 	background-repeat: no-repeat; /* prevents the image from repeating */
+	// }
+	.environment {
+		background-image: url('../public/images/busstop.jpg');
+		background-size: contain;
+	}
+	.road {
 		width: 100%;
-		height: 400px;
-		background-image: url('path/to/your/image.jpg');
-		background-size: cover; /* makes the image cover the entire div */
-		background-position: center; /* centers the image */
-		background-repeat: no-repeat; /* prevents the image from repeating */
+		bottom: 0%;
+		background-color: grey;
+		position: absolute;
+	}	
+	.stripes {
+		width: 10%;
+		height: 5%;
+		bottom: 50%;
+		background-color: white;
+		position: absolute;
 	}
+	.bus {
+		position: absolute;
+		border-radius: 40px 100px 40px 20px;
 	}
-	
+.window {
+	width: 5%;
+	height: 9%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color:black;
+	position: absolute;
+	top: -24%;
+	border-radius: 8%;
+	border: 3px solid saddlebrown;
+}
+}
+@keyframes nextBusForward {
+	0% {
+		transform: translate(-350%);
+	}
+
+	100% {
+		transform: translate(190%);
+	}
+}

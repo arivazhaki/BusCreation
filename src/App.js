@@ -1,13 +1,15 @@
+/* eslint-disable no-duplicate-imports */
 import { React } from 'react';
 import './App.scss';
+import Road from './components/Road';
+import Environment from './components/Environment';
 import Bus from './components/Bus';
-import BusBackGround from './components/BusBackground';
 
 const App = (context) =>
 	<div className="App">
-		<BusBackGround/>
+		<Environment { ...context }/>
+		<Road { ...context }/>
 		<Bus { ...context }/>
-		<div className="background-image-example"/>
 	</div>;
 
 export default App;
