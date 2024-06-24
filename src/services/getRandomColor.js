@@ -1,6 +1,6 @@
 
-const min = 2;
-const max = 8;
+const min = 4;
+const max = 10;
 const hexBase = 16;
 
 const getRandomColor = () => Math.random().toString(hexBase)

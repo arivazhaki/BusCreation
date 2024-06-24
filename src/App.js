@@ -3,13 +3,13 @@ import { React } from 'react';
 import './App.scss';
 import Road from './components/Road';
 import Environment from './components/Environment';
-import Bus from './components/Bus';
+import Buses from './components/Buses';
 
 const App = (context) =>
 	<div className="App">
 		<Environment { ...context }/>
 		<Road { ...context }/>
-		<Bus { ...context }/>
+		<Buses { ...context }/>
 	</div>;
 
 export default App;
