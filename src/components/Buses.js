@@ -5,6 +5,7 @@ import getRandomColor from '../services/getRandomColor';
 import Doors from './Doors';
 import Wheels from './Wheels';
 import Windows from './Windows';
+import Indicator from './Indicator';
 
 const getBusStyle = (context) => {
 	const { config: { roadHeight, busHeight }, data: bus } = context;
@@ -34,6 +35,7 @@ const Buses = (context) => {
 				<Doors { ...context }/>
 				<Windows { ...{ ...context, data: bus } }/>
 				<Wheels { ...context }/>
+				<Indicator { ...context }/>
 			</div>) }
 	</div>;
 };

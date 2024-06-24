@@ -4,6 +4,12 @@
 	button {
 		font-weight: bold;
 	}
+}
+html{
+	overflow: hidden;
+	background-size: contain;
+	background-position: center;
+}
 .bus-container {
 	display: flex;
 	justify-content: center;
@@ -57,7 +63,7 @@
 		width:3vw;
 		height:11vw;
 		top:1%;
-		left:11%;
+		left:73%;
 		position:absolute;
 	}
 	.baby{
@@ -69,7 +75,8 @@
 	}
 	.indicators {
 		width: 3%;
-		height: 14%;
+		height: 15%;
+		border-radius: 25%;
 		position: absolute;
 		left: -3%;
 	}
@@ -242,5 +249,4 @@
 	100% {
 		transform: translate(-200%)scaleX(-1);
 	}
-}
 }
