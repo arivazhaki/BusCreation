@@ -1,9 +1,14 @@
+/* eslint-disable no-undef */
 /* eslint-disable max-lines-per-function */
 /* eslint-disable no-dupe-keys */
 import { React } from 'react';
 import getRandomColor from '../services/getRandomColor';
+import WindowSecond from './WindowSecond';
+import Door from './Door';
+import Mirror from './Mirror';
+import WheelBack from './WheelBack';
 
-const New = () => {
+const New = (context) => {
 	const bodyStyle = {
 		justifyContent: 'space-between',
 		alignItems: 'center',
@@ -18,11 +23,17 @@ const New = () => {
 		top: '-12.5%',
 		left: '10%',
 		boxshadow: '0 4px 8px rgba(0, 0, 0, 0.1',
-		animation: 'nextBusForward infinite',
+		animation: 'nextBusForward 10s linear infinite',
 	};
 
 	return <div>
 		<div style={ bodyStyle }/>
+		<WheelBack { ...context }/>
+		<WindowSecond { ...context }/>
+		<Door { ...context }/>
+		<Mirror { ...context }/>
+		<div className="border"/>
+		<div className="borderBottom"/>
 	</div>;
 };
 
